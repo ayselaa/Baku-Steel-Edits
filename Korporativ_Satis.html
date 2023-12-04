@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&family=Montserrat:wght@100;400;500;700;900&family=Poppins:wght@100;300;500;600&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="banner" style="background-image:url('./img/banner/aboutBanner.png');">
+            <header id="header" class="header"></header>
+
+            <div class="contanier">
+
+                <div class="banner__bottom">
+
+                    <div class="banner__links">
+                        <span></span>
+                        <ul class="banner__list">
+                            <li class="banner__list-item"><a class="banner__list-item-link" href="#">Ana səhifə</a></li>
+                            <li class="banner__list-item"><a class="banner__list-item-link" href="#">Şirkət Haqqında</a>
+                            </li>
+                            <li class="banner__list-item"><a class="banner__list-item-link" href="#">Missiya, Vizyon və
+                                    Dəyərlərimiz</a></li>
+                        </ul>
+                    </div>
+                    <h1 class="banner__title">Şirkət Haqqında</h1>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="sidebarInfo">
+            <div class="contanier">
+                <div class="sidebarInfo__flex">
+
+                    <aside class="sidebar">
+                        <ul>
+                            <li class="" class="info"><a href="#">Konveyer Məhsulları</a></li>
+                            <li class=" subDrop"><a href="#"> Konveyer Olmayan Məhsullar</a> </li>
+                                <ul class="sidebar__sub" >
+                                    <li><a href="#">Bucaqlıq</a></li>
+                                    <li><a href="#">İkitavr</a></li>
+                                    <li><a href="#">Şveller</a></li>
+                                    <li><a class="" href="#">Kvadrat</a></li>
+                                </ul>
+
+                            <li class=""><a href="#">Kataloq</a></li>
+                            <li class=" active  subDrop"><a href="#">Sifariş</a></li>
+                            <ul class="sidebar__sub" >
+                                <li><a href="#">Bucaqlıq</a></li>
+                                <li><a class="active" href="#">Kvadrat</a></li>
+                            </ul>
+                            <li><a href="#">Kalkulyator</a></li>
+                        </ul>
+                    </aside>
+
+
+                    <div class="w-100">
+                    <h1 class="info__title">Korporativ Sifariş </h1>
+<form action="" style="display: block;">
+
+    <div class="contact__form-group">
+        <input class="contact__form-input w-100" type="text" id="fullName" placeholder=" ">
+        <label class="contact__form-label " for="fullName"> Ad Soyad</label>
+    </div>
+
+    <div class="contact__form-group">
+        <input class="contact__form-input w-100" type="text" id="factory" placeholder=" ">
+        <label class="contact__form-label " for="factory"> Ad Şirkətin adı</label>
+    </div>
+
+
+    <div class="contact__form-group">
+        <input class="contact__form-input w-100" type="text" id="position" placeholder=" ">
+        <label class="contact__form-label " for="position">  Vəzifə </label>
+    </div>
+
+
+    <div class="contact__form-group">
+        <input class="contact__form-input w-100" type="number" id="contact" placeholder=" ">
+        <label class="contact__form-label " for="contact">  Əlaqə nömrəsi   </label>
+    </div>
+
+
+    <div class="contact__form-group">
+        <input class="contact__form-input w-100" type="email" id="email" placeholder=" ">
+        <label class="contact__form-label " for="email">   E mail   </label>
+    </div>
+
+
+
+    
+    <div class="contact__form-group">
+        <div class="contact__form-input w-100" style="height: auto;">
+            <input  type="file" id="fileInput" style="visibility: hidden;" >
+            <img src="./img/file/file.png"  id="imagePreview" style="cursor: pointer;  " alt="file.png">
+
+        </div>
+    </div>
+    
+
+    <div class="contact__form-group w-100 " style="display: flex;
+    align-items: center;
+    justify-content: flex-end; margin: 0;">
+        <input class="contact__form-input submitForm "  type="submit" value="Hesabla">
+    </div>
+</form>
+                      
+                    </div>
+
+                   
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div id="footer"></div>
+
+    </div>
+
+    <script type="module" src="./script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+</body>
+
+</html>
