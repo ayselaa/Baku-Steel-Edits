@@ -1845,6 +1845,7 @@ line-height: normal;
 }
 .sidebarInfo .sidebar ul li.active {
   background-color: #a84141;
+  color: white;
 }
 .sidebarInfo .sidebar ul li.active a {
   color: #fff;
