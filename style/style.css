@@ -5616,7 +5616,7 @@ padding-left: 0.5rem;
 }
 
 .accordion-item{
-  border-bottom: none !important;
+  border: none !important;
 }
 
 
