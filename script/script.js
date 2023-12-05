@@ -54,3 +54,6 @@ subDrop.forEach((item) => {
             reader.readAsDataURL(input.files[0]);
         }
     });
+
+
+    

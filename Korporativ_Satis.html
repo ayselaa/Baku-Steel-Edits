@@ -69,30 +69,30 @@
 <form action="" style="display: block;">
 
     <div class="contact__form-group">
-        <input class="contact__form-input w-100" type="text" id="fullName" placeholder=" ">
+        <input class="contact__form-input w-100 bg-no-color" type="text" id="fullName" placeholder=" ">
         <label class="contact__form-label " for="fullName"> Ad Soyad</label>
     </div>
 
     <div class="contact__form-group">
-        <input class="contact__form-input w-100" type="text" id="factory" placeholder=" ">
+        <input class="contact__form-input w-100 bg-no-color" type="text" id="factory" placeholder=" ">
         <label class="contact__form-label " for="factory"> Ad Şirkətin adı</label>
     </div>
 
 
     <div class="contact__form-group">
-        <input class="contact__form-input w-100" type="text" id="position" placeholder=" ">
+        <input class="contact__form-input w-100 bg-no-color" type="text" id="position" placeholder=" ">
         <label class="contact__form-label " for="position">  Vəzifə </label>
     </div>
 
 
     <div class="contact__form-group">
-        <input class="contact__form-input w-100" type="number" id="contact" placeholder=" ">
+        <input class="contact__form-input w-100 bg-no-color" type="number" id="contact" placeholder=" ">
         <label class="contact__form-label " for="contact">  Əlaqə nömrəsi   </label>
     </div>
 
 
     <div class="contact__form-group">
-        <input class="contact__form-input w-100" type="email" id="email" placeholder=" ">
+        <input class="contact__form-input w-100 bg-no-color" type="email" id="email" placeholder=" ">
         <label class="contact__form-label " for="email">   E mail   </label>
     </div>
 
@@ -100,11 +100,13 @@
 
     
     <div class="contact__form-group">
-        <div class="contact__form-input w-100" style="height: auto;">
-            <input  type="file" id="fileInput" style="visibility: hidden;" >
-            <img src="./img/file/file.png"  id="imagePreview" style="cursor: pointer;  " alt="file.png">
-
+        <div class="contact__form-input w-100 bg-no-color" style="height: auto;">
+            <label for="fileInput">
+                <img src="./img/file/file.png" id="imagePreview" style="cursor: pointer;" alt="file.png">
+            </label>
+            <input type="file" id="fileInput" style="display: none;">
         </div>
+        
     </div>
     
 

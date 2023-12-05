@@ -68,3 +68,4 @@ export function footer(){
 
 //     footer.appendChild(footerText);
 }
+

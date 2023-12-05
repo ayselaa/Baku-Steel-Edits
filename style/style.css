@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,600&display=swap');
+
 *,
 *::before,
 *::after {
@@ -5563,4 +5565,94 @@ margin-bottom: 1rem;
 
 .tp-margin{
   margin-top: 2rem;
+}
+
+.bg-no-color{
+  background-color: white !important;
+  border: 0.75px solid #F0F0F3 !important;
+}
+
+.contact-frm-title{
+color: #000;
+font-family: 'Bai Jamjuree', sans-serif;
+font-size: 22.5px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+user-select: none;
+padding-left: 0.5rem;
+}
+
+.submitForm:hover {
+  background-color: #bb3434;
+}
+
+.accordion-button{
+  background-color: white !important;
+  border: none !important;
+  padding: 10px 4px 10px 10px !important;
+  border-bottom: 1px solid #a84141;
+  font-family: "Bai Jamjuree", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 36px !important;
+  color: #a84141 !important;
+}
+
+
+.accordion-button:focus{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+.accordion-header{
+  border-bottom: 1px solid #a84141 !important;
+
+}
+
+.ksm-content-text{
+  text-decoration: none;
+}
+
+.accordion-item{
+  border-bottom: none !important;
+}
+
+
+.mediaPageDetail-width100{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.bg-no-color::placeholder{
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  color: rgb(198, 197, 197);
+}
+
+/* Örnek olarak yazıyı gri renk ve ortaya hizalayalım */
+#imagePreview::after {
+  content: 'Dosya Seç';
+  display: block;
+  text-align: center;
+  color: grey;
+}
+
+#imagePreview{
+  width: 50px;
+user-select: none;
+}
+
+.vacancy-info-text p{
+  color: #696871;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
