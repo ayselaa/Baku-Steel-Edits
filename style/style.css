@@ -809,16 +809,18 @@ main {
 }
 .ecologic__box {
   margin: 0 0 50px;
-  width: 504px;
-  height: 392px;
+  /* width: 504px;
+  height: 392px; */
   background-color: rgb(159, 45, 45);
   box-shadow: 30px 21px 26px 0px rgba(0, 0, 0, 0.02);
   padding: 62px 58px;
-  display: none;
+  /* display: none; */
 }
-.ecologic__box.active {
+
+
+/* .ecologic__box.active {
   display: block;
-}
+} */
 .ecologic__box .title {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 34px;
@@ -895,23 +897,23 @@ main {
 
 /* Tablets */
 @media screen and (max-width: 1250px) {
-  .ecologic__box {
+  /* .ecologic__box {
     padding: 20px;
-  }
+  } */
   .ecologic__box .title {
     font-size: 22px;
   }
   .ecologic__box .text {
     font-size: 14px;
   }
-  .ecologic .ecologic__leftside {
+  /* .ecologic .ecologic__leftside {
     transform: translateY(0);
     position: relative;
-  }
-  .ecologic .ecologic__leftside .ecologic__box {
+  } */
+  /* .ecologic .ecologic__leftside .ecologic__box {
     width: 100%;
     height: 100%;
-  }
+  } */
   .ecologic .slider-ecologic-item img {
     height: auto;
   }
@@ -1050,10 +1052,28 @@ main {
 .newes .slider-next {
   margin-top: 10px;
 }
-.newes .slider-newes-item {
+/* .newes .slider-newes-item .item:nth-child(1) {
   margin-top: 70px;
+  padding: 55px 44px;
+  margin: 10px;
+  background-color: rgb(245, 245, 245);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background 0.5s ease-in;
 }
-.newes .slider-newes-item .item {
+
+.newes .slider-newes-item .item::nth-child(1):hover{
+  background-image: linear-gradient(
+      180deg,
+      #9f2d2d 19.79%,
+      rgba(159, 45, 45, 0) 100%
+    ),
+    url("../img/newes/newes1.png");
+  transition: all 0.5s ease-in-out;
+} */
+
+.newes .slider-newes-item 
+{
   padding: 55px 44px;
   margin: 10px;
   background-color: rgb(245, 245, 245);
@@ -1067,15 +1087,7 @@ main {
   flex-direction: column;
   height: 390px;
 }
-.newes .slider-newes-item .item:hover {
-  background-image: linear-gradient(
-      180deg,
-      #9f2d2d 19.79%,
-      rgba(159, 45, 45, 0) 100%
-    ),
-    url("../img/newes/newes1.png");
-  transition: all 0.5s ease-in-out;
-}
+
 .newes .slider-newes-item .item:hover .item__bottom-title {
   color: #fff;
   transition: all 0.5s ease-in-out;
@@ -1587,7 +1599,7 @@ main {
   margin-top: 70px;
 }
 .tender .slider-tender-item .item {
-  height: 173px;
+  height: auto !important;
   width: 265px;
   margin: 10px;
   flex-direction: column;
@@ -2718,14 +2730,14 @@ select:focus {
     width: 100%;
     margin-left: 0;
   }
-  .ecologic__leftside {
+  /* .ecologic__leftside {
     transform: translateY(0);
     position: relative;
-  }
-  .ecologic__leftside .ecologic__box {
+  } */
+  /* .ecologic__leftside .ecologic__box {
     width: 100%;
     height: 100%;
-  }
+  } */
   .space-betwwin {
     flex-direction: column;
   }
@@ -3795,41 +3807,93 @@ main {
 .newes .slider-newes-item {
   margin-top: 70px;
 }
-.newes .slider-newes-item .item {
-  padding: 55px 44px;
-  margin: 10px;
-  background-color: rgb(245, 245, 245);
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: background 0.5s ease-in;
-}
+
 .newes .slider-newes-item .item-flex {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   height: 390px;
 }
-.newes .slider-newes-item .item:hover {
+.newes .slider-newes-item .item {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  background-color: rgb(245, 245, 245);
+  transition: background 0.5s ease-in;
+}
+
+.newes .slider-newes-item .item .item-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.newes .slider-newes-item .item .item-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+
+}
+
+.newes .slider-newes-item .item:hover .item-image img {
+  opacity: 1;
+}
+
+.newes .slider-newes-item .item p{
+  margin-top: 2rem;
+}
+.item-image .item-overlay{
+  padding: 0rem 2rem;
+}
+
+.newes .slider-newes-item .item .item-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: linear-gradient(
-      180deg,
-      #9f2d2d 19.79%,
-      rgba(159, 45, 45, 0) 100%
-    ),
-    url("../img/newes/newes1.png");
-  transition: all 0.5s ease-in-out;
+    180deg,
+    #9f2d2d 19.79%,
+    rgba(159, 45, 45, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1;
 }
-.newes .slider-newes-item .item:hover .item__bottom-title {
-  color: #fff;
-  transition: all 0.5s ease-in-out;
+
+.newes .slider-newes-item .item:hover .item-image::before {
+  opacity: 1;
 }
-.newes .slider-newes-item .item:hover .item__bottom-text {
+
+.newes .slider-newes-item .item:hover .item__bottom {
+border-top: 1px solid #ffffff59;
+position: relative;
+z-index: 9999;
+}
+
+
+.newes .slider-newes-item .item:hover .item__bottom-text,
+.newes .slider-newes-item .item:hover p,
+.newes .slider-newes-item .item:hover .item__bottom-title
+ {
   color: #f9f9f9;
   transition: all 0.5s ease-in-out;
+  position: relative;
+  z-index: 9999;
 }
-.newes .slider-newes-item .item:hover p {
-  color: #fff;
-  transition: all 0.5s ease-in-out;
+
+@media (max-width: 481px) {
+  .newes .slider-newes-item .item,
+  .item-image .item-overlay{
+    padding: 0rem !important;
+  }
 }
+
 .newes .slider-newes-item .item__bottom {
   display: flex;
   align-items: center;
@@ -5455,14 +5519,14 @@ select:focus {
     width: 100%;
     margin-left: 0;
   }
-  .ecologic__leftside {
+  /* .ecologic__leftside {
     transform: translateY(0);
     position: relative;
-  }
-  .ecologic__leftside .ecologic__box {
+  } */
+  /* .ecologic__leftside .ecologic__box {
     width: 100%;
     height: 100%;
-  }
+  } */
   .space-betwwin {
     flex-direction: column;
   }
@@ -5655,4 +5719,27 @@ user-select: none;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+@media (min-width: 1250px) {
+  .ecologic__leftside{
+    position: absolute !important;
+    z-index: 999 !important;
+  }
+
+  .slider-ecologic{
+    position: relative;
+    z-index: 1 !important;
+  }
+
+
+}
+.ecologic::after {
+  z-index: 0 !important;
+}
+
+@media (min-width: 1600px) and (max-width: 1920px){
+  .ecologic__box{
+    width: 650px ;
+  }
 }

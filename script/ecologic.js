@@ -15,7 +15,7 @@ export function ecologicSlider() {
           infinite: true,  
           arrows: true,
 
-          autoplay: true,
+          // autoplay: true,
           autoplaySpeed: 2000,
           prevArrow: $('.slider-prev'),
           nextArrow: $('.slider-next'),
